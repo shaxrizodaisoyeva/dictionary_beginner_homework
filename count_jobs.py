@@ -13,7 +13,7 @@ def count_jobs(data:list, job:str) -> int:
     while a<len(data):
         b+=data[a].values()
         a+=1
-    c=b.count(job)
+    c= b.count(job)
     return c
 data=[{'name': 'a', 'job':'developer'}, {'name': 'b', 'job':'teacher'}, {'name':'c', 'job':'teacher'}]
 job='teacher'
