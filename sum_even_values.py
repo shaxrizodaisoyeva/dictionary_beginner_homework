@@ -6,4 +6,14 @@ def sum_even_values(data: dict) -> int:
     Returns:
         int: The sum of all even values in the dictionary
     '''
-    return 
+    sum=0
+    b=list(data.values())
+    for i in b:
+        if i%2==0:
+            sum+=i
+    return sum
+data={'name':2,
+'age':34, 'nae':43,
+'ge':34, 'nme':23,
+'ae':35}
+print(sum_even_values(data))
