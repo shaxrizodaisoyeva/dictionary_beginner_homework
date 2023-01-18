@@ -13,7 +13,7 @@ def count_users_with_age(data:list, age:int) -> int:
     while a<len(data):
         b+=data[a].values()
         a+=1
-    c=b.count(age)
+    c= b.count(age)
     return c
 data=[{'name':"a",
 'age':34}, {'name':"b",
