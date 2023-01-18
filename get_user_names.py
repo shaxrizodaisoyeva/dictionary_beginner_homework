@@ -8,4 +8,11 @@ def get_user_names(data:list, country:str) -> list:
     Returns:
         list: A list of users with the given country
     """
-    return 
+    b=[]
+    for i in data:
+        if i["country"]==country:
+            b.append(i["name"])
+    return b
+data=[{'name': 'A', 'country':'USA'}, {'name': 'B', 'country':'USA'}, {'name':'C', 'country':'Uzb'}]
+country="USA"
+print(get_user_names(data,country))
