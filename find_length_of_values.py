@@ -12,7 +12,7 @@ def find_length_of_values(data: dict) -> int:
     while a<len(data):
         b+=data.values()
         sum+=len(b[a])
-        a +=1
+        a+=1
     return sum
 data={'name': 'abc', 'job':'deval', 'na': 'bbasb', 'j':'ttea', 'nam':'asccd', 'jo':'thy'}
 print(find_length_of_values(data)) 
