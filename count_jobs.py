@@ -8,8 +8,14 @@ def count_jobs(data:list, job:str) -> int:
     Returns:
         int: The number of users with the given job
     """
-    a=data.count(job)
+    a=0 
+    b=[]
+    while a<len(data):
+        b+=data[a].values()
+        a+=1
+    c=b.count(job)
+    return c
     return a 
-data=['developer', 'teacher', 'pilot', 'developer', 'doctor', 'teacher']
-job='student'
+data=[{'name': 'a', 'job':'developer'}, {'name': 'b', 'job':'teacher'}, {'name':'c', 'job':'teacher'}]
+job='teacher'
 print(count_jobs(data, job))
