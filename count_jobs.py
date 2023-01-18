@@ -15,7 +15,6 @@ def count_jobs(data:list, job:str) -> int:
         a+=1
     c=b.count(job)
     return c
-    return a 
 data=[{'name': 'a', 'job':'developer'}, {'name': 'b', 'job':'teacher'}, {'name':'c', 'job':'teacher'}]
 job='teacher'
 print(count_jobs(data, job))
