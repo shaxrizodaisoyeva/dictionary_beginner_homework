@@ -19,11 +19,12 @@ def get_user_names_with_age_range(data:list, min_age:int, max_age:int) -> list:
     c+=b[1::2]
     for i in c:
         if i in list(range(min_age,max_age+1)):
-            d+= b[c.index(i)*2]
+            e= b[c.index(i)*2]
+            d.append(e)
     return d
 data=[{'name':"a",
-'age':15}, {'name':"b",
-'age':34}, {'name':"c",
+'age':15}, {'name':"banti",
+'age':34}, {'name':"copuy",
 'age':45}]
 min_age=30
 max_age=50
